@@ -1,6 +1,6 @@
 import MenuItem from "./MenuItem";
 import { AiFillHome } from "react-icons/ai";
-import { BsInfoCircleFill } from 'react-icons/bs'
+import { BsInfoCircleFill } from "react-icons/bs";
 import Link from "next/link";
 import DarkModeSwitch from "./DarkModeSwitch";
 
@@ -15,7 +15,9 @@ export default function Header() {
         <DarkModeSwitch />
         <Link href="/">
           <h2 className="text-2xl">
-            <p className="font-bold bg-amber-500 py-1 px-2  rounded-lg inline mx-1 ">IMDB</p>
+            <p className="font-bold bg-amber-500 py-1 px-2  rounded-lg inline mx-1 ">
+              IMDB
+            </p>
             <p className="text-xl hidden sm:inline ">Clone</p>
           </h2>
         </Link>

@@ -12,7 +12,7 @@ export default function Header() {
         <MenuItem title="About" address="/about" Icon={BsInfoCircleFill} />
       </div>
       <div className="flex items-center space-x-5">
-        <DarkModeSwitch />
+        <DarkModeSwitch />  
         <Link href="/">
           <h2 className="text-2xl">
             <p className="font-bold bg-amber-500 py-1 px-2  rounded-lg inline mx-1 ">

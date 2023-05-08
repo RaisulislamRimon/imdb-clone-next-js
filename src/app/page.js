@@ -5,11 +5,12 @@ import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const TMDB_API_KEY = process.env.TMDB_API_KEY;
+
 export default function Home() {
   return (
     <main>
-      {/* <Header /> */}
-      {/* <Header /> */}
+      <h1>Home</h1>
     </main>
   );
 }

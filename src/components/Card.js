@@ -26,11 +26,11 @@ const Card = ({ result }) => {
           />
 
           <div className="p-2">
-            <p className="line-clamp-1">
+            {/* <p className="line-clamp-1">
               <u>
                 <strong>{result?.title}</strong>
               </u>
-            </p>
+            </p> */}
             {/* <h1>
               <strong>Title:</strong>
             </h1> */}
@@ -40,6 +40,10 @@ const Card = ({ result }) => {
               {/* {result?.overview && result?.overview?.slice(0, 150) + "..."} */}
               {result?.overview}
             </p>
+            <h2 className={`truncate text-lg font-bold`} title={result?.title}>
+              {result?.title || result.name}
+            </h2>
+            <p>{result?.release_date || result?.first_aired_date}</p>
           </div>
         </Link>
       </div>

@@ -26,16 +26,16 @@ const Card = ({ result }) => {
           />
 
           <div className="p-2">
-            <p>
+            <p className="line-clamp-1">
               <u>
-                <strong>{result.title}</strong>
+                <strong>{result?.title}</strong>
               </u>
             </p>
-            <h1>
+            {/* <h1>
               <strong>Title:</strong>
-            </h1>
+            </h1> */}
             {/* <p className="text-justify"> */}
-            <p className="line-clamp-2">
+            <p className="line-clamp-2 text-md">
               <strong>Overview:</strong>{" "}
               {/* {result?.overview && result?.overview?.slice(0, 150) + "..."} */}
               {result?.overview}

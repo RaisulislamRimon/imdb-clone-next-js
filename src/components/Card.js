@@ -24,9 +24,21 @@ const Card = ({ result }) => {
             blurDataURL="/spinner.svg"
             alt="image is not available"
           />
-          <p>{result.title}</p>
-          <h1>Title</h1>
-          <p>Overview</p>
+
+          <div className="p-2">
+            <p>
+              <u>
+                <strong>{result.title}</strong>
+              </u>
+            </p>
+            <h1>
+              <strong>Title:</strong>
+            </h1>
+            <p className="text-justify">
+              <strong>Overview:</strong>{" "}
+              {result?.overview && result?.overview?.slice(0, 150) + "..."}
+            </p>
+          </div>
         </Link>
       </div>
     </div>

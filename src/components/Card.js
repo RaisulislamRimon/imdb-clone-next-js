@@ -37,16 +37,16 @@ const Card = ({ result }) => {
             </h1> */}
             {/* <p className="text-justify"> */}
             <p className="line-clamp-2 text-md">
-              <strong>Overview:</strong>{" "}
+              {/* <strong>Overview:</strong>{" "} */}
               {/* {result?.overview && result?.overview?.slice(0, 150) + "..."} */}
               {result?.overview}
             </p>
             <h2 className={`truncate text-lg font-bold`} title={result?.title}>
               {result?.title || result.name}
             </h2>
-            <p>
+            <p className="flex items-center">
               {result?.release_date || result?.first_aired_date}
-              <FiThumbsUp />
+              <FiThumbsUp className="h-5 ml-3 mr-1" />
               {result?.vote_count}
             </p>
           </div>

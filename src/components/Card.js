@@ -14,10 +14,11 @@ const Card = ({ result }) => {
             }`}
             width={500}
             height={300}
-            alt={result.title || result.original_name}
-            className="sm:rounded-t-lg hover:opacity-80 dark:hover:opacity-80 transition-opacity duration-200
-
-"
+            // alt={result.title || result.original_name}
+            className="sm:rounded-t-lg hover:opacity-80 dark:hover:opacity-80 transition-opacity duration-200"
+            placeholder="blur"
+            blurDataURL="/spinner.svg"
+            alt="image is not available"
           />
           <p>{result.title}</p>
           <h1>Title</h1>

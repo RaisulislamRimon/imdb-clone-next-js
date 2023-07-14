@@ -34,9 +34,11 @@ const Card = ({ result }) => {
             <h1>
               <strong>Title:</strong>
             </h1>
-            <p className="text-justify">
+            {/* <p className="text-justify"> */}
+            <p className="line-clamp-2">
               <strong>Overview:</strong>{" "}
-              {result?.overview && result?.overview?.slice(0, 150) + "..."}
+              {/* {result?.overview && result?.overview?.slice(0, 150) + "..."} */}
+              {result?.overview}
             </p>
           </div>
         </Link>

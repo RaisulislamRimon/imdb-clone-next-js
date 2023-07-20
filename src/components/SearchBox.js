@@ -12,10 +12,10 @@ export default function SearchBox() {
     if (!search) return;
     router.push(`/search/${search}`);
 
-    const handleClear = (e) => {
-      console.log(e);
-      console.log("handleClear");
-    };
+    // const handleClear = (e) => {
+    //   console.log(e);
+    //   console.log("handleClear");
+    // };
   };
   return (
     <form

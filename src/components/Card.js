@@ -11,11 +11,10 @@ const Card = ({ result }) => {
           {/* {result.id} */}
           <Image
             src={`https://image.tmdb.org/t/p/original/${
-              result.backdrop_path || result.poster_path
+              result?.backdrop_path || result?.poster_path
             }`}
             width={500}
             height={300}
-            // alt={result.title || result.original_name}
             className="sm:rounded-t-lg hover:opacity-80 dark:hover:opacity-80 transition-opacity duration-200"
             style={{
               maxWidth: "100%",
@@ -23,7 +22,7 @@ const Card = ({ result }) => {
             }}
             placeholder="blur"
             blurDataURL="/spinner.svg"
-            alt="image is not available"
+            alt="Poster/image is not found/available"
           />
 
           <div className="p-2">

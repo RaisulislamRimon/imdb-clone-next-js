@@ -31,6 +31,21 @@ export default async function Movie({ params }) {
           blurDataURL="/spinner.svg"
           alt="Movie Poster Image"
         />
+        <div className="p-2">
+          <h2 className="text-lg mb-3 font-bold">{movie?.title}</h2>
+          <p className="font-semibold mr-1 mb-3">
+            <span className="">Overview: </span>
+            {movie?.overview}
+          </p>
+          <p className="mb-3">
+            <span className="font-semibold mr-1">Date Released: </span>
+            {movie?.release_date || movie?.first_air_date || "Not found"}
+          </p>
+          <p className="mb-3">
+            <span className="font-semibold mr-1">Rating: </span>
+            {movie?.vote_count || "Not found"}
+          </p>
+        </div>
       </div>
     </div>
   );
